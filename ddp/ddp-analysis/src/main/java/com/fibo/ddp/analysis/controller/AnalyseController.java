@@ -1,5 +1,7 @@
 package com.fibo.ddp.analysis.controller;
 
+
+
 import com.fibo.ddp.common.model.analyse.vo.AnalyseData;
 import com.fibo.ddp.common.model.analyse.vo.AnalyseEngineSummaryVo;
 import com.fibo.ddp.common.model.analyse.vo.AnalyseRequestParam;
@@ -39,6 +41,7 @@ public class AnalyseController {
     public ResponseEntityDto getAnalyseData(@RequestBody AnalyseRequestParam param){
         AnalyseData analyseData = analyseService.getAnalyseData(param);
         return ResponseEntityBuilder.buildNormalResponse(analyseData);
+        return "danglegedang";
     }
 
     /**
